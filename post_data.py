@@ -37,9 +37,9 @@ post_data = [
     }, ]
 
 # Your Code Start from here
-
-
-
+for post in post_data:
+    post_slug = post['title'].strip().replace(' ', '-')
+    post['slug'] = post_slug
 
 # Your code ends here
 
